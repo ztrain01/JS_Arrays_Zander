@@ -77,7 +77,11 @@ console.log(bar());
 var nums = [1,2,3,6,22,98,45,23,22,12];
 //Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
 
-  //Code Here
+var evenFinder = function() {
+  return function() {
+    
+  }
+}
 
 
 //Next problem
@@ -113,7 +117,7 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 var str = 'this is my sentence';
 //Write a function called reverse that takes is given str as it's only argument and returns that string after it's been reversed
 
-  //Code Here
+str.split("").reverse().join("")
 
 
 //Next Problem
