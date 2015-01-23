@@ -23,9 +23,15 @@ var arr = [40,50,60];
 //Create a function named 'last' that is given 'arr' as the argument and returns the last item the given array.
 
 
-  //Code Here
+var last = function() {
 
+  return function() {
+    return arr[2];
+  }
+}
 
+var bar = last();
+console.log(bar());
 //Next Problem
 
 
