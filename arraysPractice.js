@@ -38,9 +38,18 @@ console.log(bar());
 var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 //Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
 
-  //Code Here
+var looper = function() {
+  return function() {
+    alert(family[0]);
+    alert(family[1]);
+    alert(family[2]);
+    alert(family[3]);
+    alert(family[4])
+  }
+}
 
-
+var bar = looper();
+console.log(bar());
 //Next problem
 
 
@@ -48,7 +57,18 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 var letters = ['A', 'B', 'C', 'D', 'E'];
 //Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
 
-  //Code Here
+var reversedLooper = function() {
+  return function() {
+    alert(letters[4]);
+    alert(letters[3]);
+    alert(letters[2]);
+    alert(letters[1]);
+    alert(letters[0])
+  }
+}
+
+var bar = reversedLooper();
+console.log(bar());
 
 
 //Next Problem
