@@ -79,7 +79,7 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 var evenFinder = function() {
   return function() {
-    
+
   }
 }
 
@@ -95,7 +95,7 @@ var odds = []
 
 
 
-  //Code Here
+
 
 
 //Next Problem
@@ -124,6 +124,7 @@ str.split("").reverse().join("")
 
 
 var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
+var itemToAdd = "milk"
 /*
   Here we're going to write a function that mimics going shopping and checking things off of our grocery list,
   and adding new items to our list. Write a function called removeItem that is given two arguments, the first is myGroceryList, and the
@@ -134,7 +135,20 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   myGroceryList then return the new, updated grocery list.
 */
 
-  //Code Here
+var addItemToGroceryList = function(groceryList, item) {
+  var isPresent = false;
+  for (var i = 0; i < groceryList.length; i++) {
+    if (groceryList[i]) === item) {
+          isPresent = true;
+      }
+  }
+  If (!isPresent === false) {
+    groceryList.push(item);
+  }
+  return groceryList;
+}
+
+console.log(addItemToGroceryList(list, itemToAdd));
 
 //removeItem('chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem('Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
@@ -158,9 +172,15 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //Write a function called addTen that is given 'numbers' as it's only argument and returns a new
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
-  //Code Here
 
+var addTen = function (numbersArray) {
+  for (var i = 0; i < numbersArray.length; i++) {
+    numbersArray[i] = parseInt(numbersArray[i]) + 10;
+  }
+  return numbersArray;
+};
 
+console.log(addTen(numbers))
 
 //Next Problem
 
